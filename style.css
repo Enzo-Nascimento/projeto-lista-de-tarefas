@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #eeeeee;
+}
+h1{
+    margin-top: 1em;
+    text-align: center;
+}
+header{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+input{
+    height: 120px;
+    width: 100%;
+    font-size: 2rem;
+    padding-left: 10% ;
+}
+#inputTarefa{
+    width: 50%;
+}
+@media(max-width:500px){
+    #inputTarefa{
+        width: 60%;
+        font-size: 20px;
+    }
+    #btn-add{
+        font-size: 15px;
+    }
+}
+.add{
+    width: 20%;
+    cursor: pointer;
+    background-color: green;
+    color: #fff;
+    border: none;
+    height: 120px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 20px ;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px ;
+}
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 2%;
+}
+.item-icone{
+    flex: 20%;
+    text-align: center;
+}
+.item-nome{
+    flex: 55%;
+    font-size: 20px;
+    font-weight: bold;
+}
+.item-botao{
+    flex: 25%;
+}
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    height: 80px;
+    width: 5.5em;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+.item.clicado{
+    background-color: #d4f6d9;
+}
+.item.clicado .item-nome{
+    text-decoration: line-through;
+    color: gray;
+}
+.item.clicado .material-symbols-outlined{
+    color: green;
+}
