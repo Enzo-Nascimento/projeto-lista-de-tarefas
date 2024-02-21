@@ -68,7 +68,7 @@ main{
     text-align: center;
 }
 .item-nome{
-    flex: 55%;
+    flex: 50%;
     font-size: 20px;
     font-weight: bold;
 }
@@ -84,7 +84,7 @@ main{
     border: none;
     padding: 10px;
     height: 80px;
-    width: 5.5em;
+    width: 25vw;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     cursor: pointer;
